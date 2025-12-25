@@ -1,0 +1,608 @@
+/**
+ * MD 主题导出
+ * 导出时间: 2025/12/25 13:15:32
+ * 说明: 该文件包含完整的主题样式，可直接使用
+ */
+:root {
+  /* 动态配置变量 */
+  --md-primary-color: #A9A9A9;
+  --md-font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
+  --md-font-size: 16px;
+}
+
+/* 段落缩进和对齐 */
+#output p {
+  
+  
+}
+/**
+ * MD 默认主题（经典主题）
+ * 按 Alt/Option + Shift + F 可格式化
+ * 如需使用主题色，请使用 var(--md-primary-color) 代替颜色值
+ */
+
+/* ==================== 一级标题 ==================== */
+h1 {
+  display: table;
+  padding: 0 1em;
+  border-bottom: 2px solid var(--md-primary-color);
+  margin: 2em auto 1em;
+  color: hsl(var(--foreground));
+  font-size: calc(var(--md-font-size) * 1.2);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==================== 二级标题 ==================== */
+h2 {
+  display: table;
+  padding: 0 0.2em;
+  margin: 4em auto 2em;
+  color: #fff;
+  background: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1.2);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==================== 三级标题 ==================== */
+h3 {
+  padding-left: 8px;
+  border-left: 3px solid var(--md-primary-color);
+  margin: 2em 8px 0.75em 0;
+  color: hsl(var(--foreground));
+  font-size: calc(var(--md-font-size) * 1.1);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* ==================== 四级标题 ==================== */
+h4 {
+  margin: 2em 8px 0.5em;
+  color: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1);
+  font-weight: bold;
+}
+
+/* ==================== 五级标题 ==================== */
+h5 {
+  margin: 1.5em 8px 0.5em;
+  color: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1);
+  font-weight: bold;
+}
+
+/* ==================== 六级标题 ==================== */
+h6 {
+  margin: 1.5em 8px 0.5em;
+  font-size: calc(var(--md-font-size) * 1);
+  color: var(--md-primary-color);
+}
+
+/* ==================== 段落 ==================== */
+p {
+  margin: 1.5em 8px;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground));
+}
+
+/* ==================== 引用块 ==================== */
+blockquote {
+  font-style: normal;
+  padding: 1em;
+  border-left: 4px solid var(--md-primary-color);
+  border-radius: 6px;
+  color: hsl(var(--foreground));
+  background: var(--blockquote-background);
+  margin-bottom: 1em;
+}
+
+blockquote > p {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground));
+  margin: 0;
+}
+
+/* ==================== GFM 警告块 ==================== */
+.alert-title-note,
+.alert-title-tip,
+.alert-title-info,
+.alert-title-important,
+.alert-title-warning,
+.alert-title-caution,
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr,
+.alert-title-todo,
+.alert-title-success,
+.alert-title-done,
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq,
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing,
+.alert-title-danger,
+.alert-title-error,
+.alert-title-bug,
+.alert-title-example,
+.alert-title-quote,
+.alert-title-cite {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.alert-title-note {
+  color: #478be6;
+}
+
+.alert-title-tip {
+  color: #57ab5a;
+}
+
+.alert-title-info {
+  color: #93c5fd;
+}
+
+.alert-title-important {
+  color: #986ee2;
+}
+
+.alert-title-warning {
+  color: #c69026;
+}
+
+.alert-title-caution {
+  color: #e5534b;
+}
+
+/* Obsidian-style callout colors */
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr {
+  color: #00bfff;
+}
+
+.alert-title-todo {
+  color: #478be6;
+}
+
+.alert-title-success,
+.alert-title-done {
+  color: #57ab5a;
+}
+
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq {
+  color: #c69026;
+}
+
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing {
+  color: #e5534b;
+}
+
+.alert-title-danger,
+.alert-title-error {
+  color: #e5534b;
+}
+
+.alert-title-bug {
+  color: #e5534b;
+}
+
+.alert-title-example {
+  color: #986ee2;
+}
+
+.alert-title-quote,
+.alert-title-cite {
+  color: #9ca3af;
+}
+
+/* GFM Alert SVG 图标颜色 */
+.alert-icon-note {
+  fill: #478be6;
+}
+
+.alert-icon-tip {
+  fill: #57ab5a;
+}
+
+.alert-icon-info {
+  fill: #93c5fd;
+}
+
+.alert-icon-important {
+  fill: #986ee2;
+}
+
+.alert-icon-warning {
+  fill: #c69026;
+}
+
+.alert-icon-caution {
+  fill: #e5534b;
+}
+
+/* Obsidian-style callout icon colors */
+.alert-icon-abstract,
+.alert-icon-summary,
+.alert-icon-tldr {
+  fill: #00bfff;
+}
+
+.alert-icon-todo {
+  fill: #478be6;
+}
+
+.alert-icon-success,
+.alert-icon-done {
+  fill: #57ab5a;
+}
+
+.alert-icon-question,
+.alert-icon-help,
+.alert-icon-faq {
+  fill: #c69026;
+}
+
+.alert-icon-failure,
+.alert-icon-fail,
+.alert-icon-missing {
+  fill: #e5534b;
+}
+
+.alert-icon-danger,
+.alert-icon-error {
+  fill: #e5534b;
+}
+
+.alert-icon-bug {
+  fill: #e5534b;
+}
+
+.alert-icon-example {
+  fill: #986ee2;
+}
+
+.alert-icon-quote,
+.alert-icon-cite {
+  fill: #9ca3af;
+}
+
+/* ==================== 代码块 ==================== */
+pre.code__pre,
+.hljs.code__pre {
+  font-size: 90%;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 0 !important;
+  line-height: 1.5;
+  margin: 10px 8px;
+}
+
+/* ==================== 图片 ==================== */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0.1em auto 0.5em;
+  border-radius: 4px;
+}
+
+/* ==================== 列表 ==================== */
+ol {
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}
+
+li {
+  display: block;
+  margin: 0.2em 8px;
+  color: hsl(var(--foreground));
+}
+
+/* ==================== 脚注 ==================== */
+/* footnotes 在 buildFootnotes() 中渲染为 <p> 标签 */
+p.footnotes {
+  margin: 0.5em 8px;
+  font-size: 80%;
+  color: hsl(var(--foreground));
+}
+
+/* ==================== 图表 ==================== */
+figure {
+  margin: 1.5em 8px;
+  color: hsl(var(--foreground));
+}
+
+figcaption,
+.md-figcaption {
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* ==================== 分隔线 ==================== */
+hr {
+  border-style: solid;
+  border-width: 2px 0 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1, 0.5);
+  transform-origin: 0 0;
+  transform: scale(1, 0.5);
+  height: 0.4em;
+  margin: 1.5em 0;
+}
+
+/* ==================== 行内代码 ==================== */
+code {
+  font-size: 90%;
+  color: #d14;
+  background: rgba(27, 31, 35, 0.05);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+/* 代码块内的 code 标签需要特殊处理（覆盖行内 code 样式） */
+pre.code__pre > code,
+.hljs.code__pre > code {
+  display: -webkit-box;
+  padding: 0.5em 1em 1em;
+  overflow-x: auto;
+  text-indent: 0;
+  color: inherit;
+  background: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* ==================== 强调 ==================== */
+em {
+  font-style: italic;
+  font-size: inherit;
+}
+
+/* ==================== 链接 ==================== */
+a {
+  color: #576b95;
+  text-decoration: none;
+}
+
+/* ==================== 粗体 ==================== */
+strong {
+  color: var(--md-primary-color);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+/* ==================== 表格 ==================== */
+table {
+  color: hsl(var(--foreground));
+}
+
+thead {
+  font-weight: bold;
+  color: hsl(var(--foreground));
+}
+
+th {
+  border: 1px solid #dfdfdf;
+  padding: 0.25em 0.5em;
+  color: hsl(var(--foreground));
+  word-break: keep-all;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+td {
+  border: 1px solid #dfdfdf;
+  padding: 0.25em 0.5em;
+  color: hsl(var(--foreground));
+  word-break: keep-all;
+}
+
+/* ==================== KaTeX 公式 ==================== */
+.katex-inline {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.katex-block {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+/* ==================== 标记高亮 ==================== */
+.markup-highlight {
+  background-color: var(--md-primary-color);
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.markup-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--md-primary-color);
+}
+
+.markup-wavyline {
+  text-decoration: underline wavy;
+  text-decoration-color: var(--md-primary-color);
+  text-decoration-thickness: 2px;
+}
+
+/**
+ * MD 少数派主题 - 高级设计师打磨版
+ * 核心升级：
+ * 1. 字体族注入：针对 iOS/Android 优化 PingFang SC 与思源黑体。
+ * 2. 视觉降噪：将亮红改为哑光红，将纯黑改为墨灰色。
+ * 3. 极简结构：弱化 H2/H3 的边框粗度，提升标题文字字号对比。
+ */
+
+/* ==================== 字体与全局变量 ==================== */
+:root {
+  --sspai-red: #B52B2C;         /* 哑光质感的少数派红 */
+  --text-main: #292525;         /* 墨灰色，比纯黑更有深度 */
+  --font-sans: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.md-container {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==================== 一级标题 (封面大标题) ==================== */
+h1 {
+  display: block;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid var(--sspai-red) !important; /* 精致细红线 */
+  margin: 2.8em 8px 1.5em !important;
+  color: var(--text-main) !important;
+  font-size: 1.9em !important;         /* 极大的字号提升，强化封面感 */
+  font-weight: 800 !important;         /* 超粗字重 */
+  text-align: center !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;   /* 字间距微收，更有高级感 */
+}
+
+/* ==================== 二级标题 (精致刻度线) ==================== */
+h2 {
+  display: block;
+  padding: 2px 0 2px 12px !important;  
+  margin: 3.5em 8px 1.2em !important;
+  color: var(--text-main) !important; 
+  border-left: 3px solid var(--sspai-red) !important; /* 宽度减至 3px，不突兀 */
+  background: transparent !important;
+  font-size: 1.75em !important;         /* 提升字号，与 H1 形成梯队 */
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+/* ==================== 三级标题 (极简引导) ==================== */
+h3 {
+  padding-left: 10px !important;
+  border-left: 1.5px solid var(--sspai-red) !important; /* 极细垂直线 */
+  margin: 2.5em 8px 0.8em 0 !important;
+  color: var(--text-main) !important;
+  font-size: 1.2em !important;
+  font-weight: 700 !important;
+}
+
+/* ==================== 四/五/六级标题 ==================== */
+h4, h5, h6 {
+  margin: 1.5em 8px 0.5em !important;
+  color: var(--sspai-red) !important;
+  font-weight: bold !important;
+  font-size: 1em !important;
+  opacity: 0.8;
+}
+
+/* ==================== 段落 (呼吸感核心) ==================== */
+p {
+  font-family: var(--font-sans);
+  margin: 1.8em 8px !important;
+  line-height: 1.9 !important;      /* 提升至 1.9，长文阅读极度舒适 */
+  letter-spacing: 0.03em !important;
+  color: #333333 !important;        /* 稍淡的墨黑，减少视觉压迫 */
+  text-align: justify !important;
+}
+
+/* ==================== 引用块 (哑光沉浸感) ==================== */
+blockquote {
+  padding: 1.5em 1.8em !important;
+  margin: 2.5em 8px !important;
+  border-left: none !important;
+  border-radius: 4px !important;
+  background: #F8F8F8 !important;   /* 更浅的灰色，与背景自然融合 */
+}
+
+blockquote > p {
+  font-size: 0.96em !important;
+  color: #666666 !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+/* ==================== 强调与高亮 ==================== */
+strong {
+  color: var(--text-main) !important;
+  font-weight: bold !important;
+  /* 取消边框，改为极淡的底色点缀，类似少数派官网 */
+  background: rgba(181, 43, 44, 0.05);
+  padding: 0 2px;
+}
+
+em { 
+  color: var(--sspai-red) !important; 
+  font-style: normal !important; 
+}
+
+/* ==================== 行内代码 (精致点缀) ==================== */
+code {
+  font-family: "Menlo", "Monaco", monospace !important;
+  font-size: 0.88em !important;
+  color: var(--sspai-red) !important;
+  background: #FDF2F2 !important;
+  padding: 2px 5px !important;
+  border-radius: 3px !important;
+}
+
+/* ==================== 列表 (极简方块) ==================== */
+ul { list-style: square !important; color: var(--sspai-red) !important; }
+li {
+  margin: 0.8em 0 !important;
+  color: var(--text-main) !important;
+  line-height: 1.7 !important;
+}
+
+/* ==================== 分隔线 ==================== */
+/* ==================== 分隔线 (灵动三点版) ==================== */
+/* ==================== 分隔线 (清晰短横线版) ==================== */
+hr {
+  border: 0 !important;
+  border-top: 2px solid #D1D1D1 !important; /* 颜色加深到中灰，厚度增至 2px */
+  margin: 4em auto !important;
+  width: 60% !important; /* 宽度缩短到 20%，更有设计感 */
+  opacity: 1 !important;  /* 确保透明度为 1 */
+}
+/* ==================== 表格 ==================== */
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 2.5em 0 !important;
+}
+th {
+  border-bottom: 2px solid var(--text-main) !important;
+  padding: 12px !important;
+  color: var(--sspai-red) !important;
+}
+td {
+  border-bottom: 1px solid #F5F5F5 !important;
+  padding: 12px !important;
+}
+
+/* ==================== GFM 警告块 (色值统一) ==================== */
+[class^="alert-title-"] {
+  font-weight: bold !important;
+  margin-bottom: 0.5em !important;
+  font-size: 0.9em !important;
+}
+.alert-title-important, .alert-title-danger { color: var(--sspai-red) !important; }
